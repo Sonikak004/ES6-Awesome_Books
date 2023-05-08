@@ -46,6 +46,7 @@
 - Java Script
 - Linters
 - Bootsrap 5
+- ES6
 
 <details>
   <summary>Client</summary>
