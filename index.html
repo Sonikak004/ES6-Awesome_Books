@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Awesome book</title>
+</head>
+<body>
+
+  <!-- Navigation section -->
+
+  <header>
+    <nav class="menu">
+      <ul>
+        <li class="logo"><a href="#">Awesome books</a></li>
+      </ul>
+      <ul class="nav-ul">
+        <li id="item1" class="menu-nav" value="list"><a href="#">list</a> </li>
+        <li id="item2" class="menu-nav" value="Add new"><a href="#">Add new</a> </li>
+        <li id="item3" class="menu-nav" value="contact"><a href="#">contact</a> </li>
+      </ul>
+    </nav>
+    
+        <div id="current-time-zone">
+          <div id="date-time"></div>
+        </div>
+  </header>
+
+  <!-- book list display section -->
+
+  <div id="book-section">
+  <div class="book-list">
+ 
+     <h2>
+      All Awesome Books
+     </h2>
+  </div>
+  <div class="table-div">
+  <table class="table table-striped mt-5">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody id="book-list"></tbody>
+  </table>
+</div>
+</div>
+  <!-- book list add section -->
+
+    <div id="add-section" class="container hidden">
+    <h3 class="display-4 text-center add-book">
+      <i class="fas fa-book-open text-primary"></i>Add a new book</h3>
+       <form id="book-form">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" id="author" class="form-control">
+        </div>
+        <input type="submit" value="Add" class="btn btn-secondary btn-block button">
+      </form>
+  </div>
+
+      <!-- contact me section  -->
+
+       <div id="contact-section" class="container hidden">
+  <h2 class="cont">contact Information</h2>
+    <p> Do you have any questions or you just want to say "hello"?
+        you can reach out to us!
+        <ul class="cont-list">
+            <li> My e-mail:sonikak004@gmail.com</li>
+            <li> My phone number:+91 00000 00000</li>
+            <li> My Address:Streetname 22,84503 city,India</li>
+        </ul>
+    </p>
+    </div>
+
+    <!-- footer with copyrights -->
+
+    <footer id="footer">
+      <div class="copyright"> <p>Copyright</p> 
+        &copy; <p> 2023 Sonika Kumar</p>
+      </div>
+    </footer>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
