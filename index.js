@@ -17,7 +17,7 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
     UI.showAlert('Please fill in all fields', 'danger');
   } else {
     // Instantiate book
-    const book = new Book(title, author);
+    const book = Book(title, author);
     // Add book to UI
     UI.addBookToList(book);
     // Add book to store
@@ -63,12 +63,12 @@ itemThree.addEventListener('click', () => {
   addSection.classList.add('hidden');
 });
 
-// date using Luxon library
+// date using Luxon library UTC +1 program time zone!
 
 const dateAndTime = () => {
   const now = DateTime.local();
-  const formattedDateTime = now.toFormat('yyyy-MM-dd HH:mm:ss');
-  document.getElementById('date-time').innerHTML = `${formattedDateTime}`;
+  const formattedDateTime = now.toFormat('LLLL dd, yyyy HH:mm:ss');
+  document.getElementById('date-time').textContent = formattedDateTime;
 };
 
 dateAndTime();
