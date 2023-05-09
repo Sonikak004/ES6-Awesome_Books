@@ -1,6 +1,9 @@
-export default class Book {
-  constructor(title, author) {
-    this.title = title;
-    this.author = author;
-  }
-}
+const Book = (title, author) => {
+  const book = Object.create(Book.prototype);
+  book.title = title;
+  book.author = author;
+  return book;
+};
+Book.prototype = Object.create(Object.prototype);
+
+export default Book;
