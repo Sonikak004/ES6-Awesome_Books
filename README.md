@@ -32,7 +32,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Awesome book <a name="about-project"></a>
+# 📖 Awesome books <a name="about-project"></a>
 
 > it a basic book collection app,and learning more about javascript object and class
 
